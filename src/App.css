@@ -1,38 +1,73 @@
-.App {
-  text-align: center;
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root{
+  /*Paleta Principal: Sky Lavander*/
+  --cor-01: rgb(199, 192, 233);
+  --cor-02:rgb(198, 177, 220) /*roxinho*/;
+  --cor-03: rgb(188, 203, 170) ;
+  --cor-04: rgb(164, 220, 209);
+  --cor-5: rgb(218, 241, 246);
+
+  /*Paleta Arco-íris, para detalhes*/
+  --cor-destaque-01: #FFB500 /*Amarelo*/;
+  --cor-destaque-02: #FFA07A /*Salmão*/; 
+  --cor-destaque-03: #C29CEB /*Roxinho*/; 
+  --cor-destaque-04: #98FB98 /*Verde Claro*/;
+  --cor-destaque-05: #62B5CE /*Azul*/;
+  --cor-destaque-06: #5EE8B7 /*Verde escuro*/;
+
+  /*Tipografia*/
+  --fonte-principal: "Montserrat", sans-serif;
+  --fonte-secundaria: "Montserrat", sans-serif;
+
+  --tamanho-titulo: 2rem;
+  --tamanho-paragrafo: 1rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }

@@ -1,24 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Navbar from './assets/components/static/navbar/Navbar';
+import Footer from './assets/components/static/footer/Footer';
+import Home from "./assets/components/pages/home/Home";
+import SobreNos from "./assets/components/pages/about/SobreNos";
+import Blog from "./assets/components/pages/blog/Blog";
+import Login from "./assets/components/pages/login/Login";
+import Parceiros from "./assets/components/pages/parceiros/Parceiros";
+import Funcionalidades from "./assets/components/pages/funcionalidades/Funcionalidades";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+
+          <Route path="/inicio" element={<Home />} />
+
+          <Route path="/quem-somos" element={<SobreNos />} />
+
+          <Route path="/comunidade" element={<Blog />} />
+
+          <Route path="/login" element={<Login />} />
+
+          <Route path="/parceiros" element={<Parceiros />} />
+
+          <Route path="/funcionalidades" element={<Funcionalidades />} />
+        </Routes>
+        <Footer />
+      </BrowserRouter>
+    </>
   );
 }
 
