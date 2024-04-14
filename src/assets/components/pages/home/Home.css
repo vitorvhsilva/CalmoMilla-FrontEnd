@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+
+:root {
+  --cor-principal: #B0A3DB;
+  --cor-secundaria: #443383;
+  --cor-botao: #6D5CAC;
+  --fonte: 'Italiana', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fonte);
+}
+
+.texto-roxo {
+  color: var(--cor-secundaria);
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background: var(--cor-principal);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.secao-direita {
+  width: 30vw;
+  height: 70vh;
+}
+
+.secao-esquerda h1 {
+  font-size: 10rem;
+  color: white;
+}
+
+.secao-esquerda h2 {
+  font-size: 5rem;
+  color: white;
+  margin: 1rem 0 0 2rem;
+}
+
+.secao-esquerda button {
+  font-size: 3.3rem;
+  color: white;
+  padding: 0.8rem 4rem;
+  margin: 2.5rem 0 0 0;
+  border-radius: 40px;
+  border: none;
+  background-color: var(--cor-botao);
+}
+
+#flor1 {
+  position: relative;
+  top: -28px;
+}
+
+#flor2 {
+  position: relative;
+  bottom: 650px;
+  right: 600px;
+}
+#flor3 {
+  position: relative;
+  bottom: 335px;
+  right: 1460px;
+}
+#flor4 {
+  position: relative;
+  bottom: 1400px;
+  right: 1155px;
+}
+#flor5 {
+  position: relative;
+  bottom: 1300px;
+  left: 217px;
+}
+#flor6 {
+  position: relative;
+  bottom: 1100px;
+  right: 100px;
+}
+#flor7 {
+  position: relative;
+  bottom: 1700px;
+  right: 350px;
+}
