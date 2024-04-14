@@ -28,7 +28,7 @@ function Carrosel()
     return (
         <Carousel>
             {
-                items.map( item => <Item key={item.id} imagem={item.imagem} /> )
+              items.map( item => <Item key={item.id} imagem={item.imagem} /> )
             }
         </Carousel>
     )

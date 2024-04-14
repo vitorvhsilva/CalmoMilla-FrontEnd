@@ -48,7 +48,10 @@ table {
   --cor-02:rgb(198, 177, 220) /*roxinho*/;
   --cor-03: rgb(188, 203, 170) ;
   --cor-04: rgb(164, 220, 209);
-  --cor-5: rgb(218, 241, 246);
+  --cor-05: rgb(218, 241, 246);
+  --cor-06: #443383;
+  --cor-07: #B0A3DB;
+  --cor-08: #8070BA;
 
   /*Paleta Arco-íris, para detalhes*/
   --cor-destaque-01: #FFB500 /*Amarelo*/;

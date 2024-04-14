@@ -13,12 +13,12 @@ function Home() {
   return (
     <>
       <main>
-        <section className='secao-esquerda'>
-          <h1>Calmo<span className='texto-roxo'>Milla</span></h1>
-          <h2>o seu <span className='texto-roxo'><br />equilíbrio <br />mental </span><br />começa aqui!</h2>
+        <section className='secaoEsquerda'>
+          <h1>Calmo<span className='textoRoxo'>Milla</span></h1>
+          <h2>o seu <span className='textoRoxo'><br />equilíbrio <br />mental </span><br />começa aqui!</h2>
           <button>Vamos começar?</button>
         </section>
-        <section className='secao-direita'>
+        <section className='secaoDireita'>
           <Carrosel/>
           <img src={Flor1} alt="" id='flor1' />
           <img src={Flor2} alt="" id='flor2' />

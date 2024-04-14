@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Italiana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('../../../../App.css'); 
+
+h2 {
+  font-family: 'Italiana', sans-serif;
+  text-align: center;
+  font-size: 7rem;
+  padding-top: 1.5rem;
+  color: white;
+}
+
+.fundoPrincipal {
+  width: 100%;
+  background: var(--cor-08);
+}
+
+.conteudo {
+  margin-top: 10rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.conteudo img {
+  width: 35vw;
+}
+
+.conteudoTexto { 
+  width: 50%;
+}
+
+.conteudoTexto h3 { 
+  font-family: 'Italiana', sans-serif;
+  text-align: right;
+  color: var(--cor-06);
+  font-size: 5rem;
+  width: 100%;
+}
+
+.conteudoTexto p { 
+  margin-top: 3rem;
+  font-family: 'Roboto';
+  text-align: right;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 300;
+}
