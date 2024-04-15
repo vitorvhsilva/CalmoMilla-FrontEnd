@@ -18,13 +18,20 @@ h2 {
 .conteudo {
   margin-top: 10rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
 }
 
 .conteudo img {
   width: 35vw;
+  transition: all 0.5s ease-out;
 }
+
+.conteudo img:hover {
+  transition: all 0.5s ease-out;
+  transform: scale(1.1);
+}
+
 
 .conteudoTexto { 
   width: 50%;
