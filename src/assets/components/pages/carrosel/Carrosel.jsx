@@ -1,37 +1,18 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel'
-import Item from './Item';
 import Carrosel1 from '../../../imgs/home/carrosel1.png'
 import Carrosel2 from '../../../imgs/home/carrosel2.png'
 import Carrosel3 from '../../../imgs/home/carrosel3.png'
+import AliceCarousel from 'react-alice-carousel';
+import 'react-alice-carousel/lib/alice-carousel.css';
 
-function Carrosel()
-{
-    var items = [
-      {
-        'id': 1,
-        'imagem': Carrosel1,
-        'titulo': 'Imagem 1'
-      },
-      {
-        'id': 2,
-        'imagem': Carrosel2,
-        'titulo': 'Imagem 2'
-      },
-      {
-        'id': 3,
-        'imagem': Carrosel3,
-        'titulo': 'Imagem 3'
-      },
-    ]
+const handleDragStart = (e) => e.preventDefault();
 
-    return (
-        <Carousel>
-            {
-              items.map( item => <Item key={item.id} imagem={item.imagem} /> )
-            }
-        </Carousel>
-    )
-}
+const items = [
+	<img src={Carrosel1} onDragStart={handleDragStart} role="presentation" alt=''/>,
+	<img src={Carrosel2} onDragStart={handleDragStart} role="presentation" alt=''/>,
+	<img src={Carrosel3} onDragStart={handleDragStart} role="presentation" alt=''/>,
+];
 
-export default Carrosel
+const Gallery = () => <AliceCarousel innerWidth={500} animationDuration={2000} infinite={true} autoPlay={true} paddingLeft={160} mouseTracking items={items} />;
+
+export default Gallery

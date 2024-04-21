@@ -13,14 +13,6 @@ main {
   width: 100%;
   height: 100vh;
   background: var(--cor-07);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-
-.secaoDireita {
-  width: 30vw;
-  height: 70vh;
 }
 
 .secaoEsquerda h1 {
@@ -43,7 +35,7 @@ main {
   border-radius: 40px;
   border: none;
   background-color: var(--cor-06);
-}
+} 
 
 #flor1 {
   position: relative;
